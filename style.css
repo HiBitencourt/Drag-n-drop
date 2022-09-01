@@ -1,0 +1,88 @@
+html {
+    font-family: 'Nunito';
+}
+
+body {
+    background-image: linear-gradient(100deg, #acb6e5, #C0C0C0, #D8BFD8, #B7B7F0);
+    color: #E0FFFF;
+    width: 100%;
+    /* flex-wrap: inherit; */
+    /* grid-column: auto; */
+}
+
+.boards {
+    display: flex;
+    margin-top: 32px;
+}
+
+.board {
+    background: #acb6e5;
+    border: 1px solid #808080;
+    border-radius: 20px;
+    margin: 0 16px;
+    box-shadow: 0 3px 2px #808080 ;
+}
+
+.board h3 {
+    padding: 16px;
+    margin: 0;
+    color: #000000;
+}
+
+.dropzone {
+    padding: 16px;
+    min-width: 282px;
+    min-height: 200px;
+}
+
+.card {
+    background-color: #D8BFD8;
+    padding: 16px;
+    box-shadow: 0 2px 2px -1px  #acb6e5;
+    width: 250px;
+    margin: 25px 0;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.status {
+    width: 30px;
+    height: 8px;
+    background: #808080;
+    margin-bottom: 16px;
+    border-radius: 8px;
+}
+
+.status.green {
+    background: #23d2ac;
+}
+
+.status.blue {
+    background: #33adff;
+}
+
+.status.crimson {
+    background: #DC143C;
+}
+
+.highlight {
+    background-color: #acb6e5;
+}
+
+.card, .dropzone {
+    transition: 400ms;
+}
+
+.is-dragging {
+    cursor: move;
+    opacity: 0.5;
+}
+
+.over {
+    background-color:#B0C4DE;
+}
+
+.content {
+    color: #000000;
+}
